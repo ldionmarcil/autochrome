@@ -29,7 +29,11 @@
         }
       ],
       "type": "folder"
-    }
+    },
+    "synced": {
+      "children": [  ],
+      "type": "folder"
+      }
   },
   "version": 1
 }
