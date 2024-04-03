@@ -78,7 +78,7 @@ def parse_options(arg_list)
     end
 
     opts.on_tail("--list-themes", "List included themes") do
-      pathglob = File.join(ProfileBuilder::BuiltinThemeDirectory, "*.crx")
+      pathglob = File.join(AutoChrome::ProfileBuilder::BuiltinThemeDirectory, "*.crx")
       themes = Dir[pathglob].select {|f| File.file?(f)}.map do |f|
         File.basename(f).gsub("\.crx", "")
       end
